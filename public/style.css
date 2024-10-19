@@ -1,0 +1,118 @@
+body {
+    font-family: 'Cinzel', serif;
+    background-image: url(sky.jpeg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  header {
+    background-image: url(GoT.jpeg);
+    background-size:10%;
+    background-position: center; 
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 3.5em;
+  }
+  
+  nav {
+    background-image: linear-gradient(to right, #051720, #91b1c5);
+    color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav form {
+    display: inline-block;
+  }
+  
+  nav input[type="text"] {
+    padding: 5px;
+    width: 200px;
+  }
+  
+  nav button {
+    padding: 5px;
+  }
+  
+  .character-display {
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+  
+  .character-display img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+
+  }
+
+  
+  .navigation-buttons {
+    margin-top: 20px;
+  }
+  
+  .navigation-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #061f2c;
+    color: #f5f5f5;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .navigation-buttons a:hover {
+    background-color: #669bbc;
+    color: #f5f5f5;
+  }
+  
+  .content {
+    background-image: url(wall.jpg);
+    background-size: 100% auto;
+    background-position: center;     
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  p {
+    color: #ececec;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .searchbtn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #061f2c;
+    color: #f5f5f5;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .searchbtn:hover{
+    background-color: #669bbc;
+    color: #f5f5f5;
+  }
+
+  h1 {
+    color: #ececec;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: contain;
+  }

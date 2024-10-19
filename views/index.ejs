@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoT Ultimate Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+    <header>
+
+      </header>
+  <nav>
+    <form action="/search" method="get">
+      <input type="text" name="q" placeholder="Search for a character" required>
+      <button class="searchbtn" type="submit">Search</button>
+    </form>
+  </nav>
+<div class="content">
+  <div class="character-display">
+    <h1><%= character.firstName %> <%= character.lastName %></h1>
+    <img src="<%= character.imageUrl %>" alt="Character Image">
+    <p><strong>ID:</strong> <%= character.id %></p>
+    <p><strong>Born:</strong> <%= character.born ? character.born : 'Unknown' %></p>
+    <p><strong>Dead:</strong> <%= character.died ? character.died : 'Alive' %></p>
+    <p><strong>Title(s):</strong> <%= character.title %></p>
+    <p><strong>Aliases:</strong> <%= character.aliases ? character.aliases.join(', ') : 'None' %></p>
+    <p><strong>Family:</strong> <%= family %></p>
+    <% if (familyCrest) { %>
+      <p><strong>Family Crest:</strong> <img src="<%= familyCrest %>" alt="Family Crest"></p>
+    <% } %>
+
+    <div class="navigation-buttons">
+      <a href="/prev">Previous</a>
+      <a href="/next">Next</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
